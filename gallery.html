@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Study on the Preliminary Knowledge of Aquaculture</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for the page */
+        body {
+            background-color: #f0f0f0; /* Example background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0077b5; /* LinkedIn blue color */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navigation {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .navigation a:hover {
+            background-color: #005580; /* Darker shade on hover */
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo h1 {
+            font-size: 2em;
+            margin: 10px;
+        }
+        .gallery-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="logo">
+            <h1>Aquaculture Gallery</h1>
+        </div>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images\image1.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images\image2.jpeg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images\image3.jpeg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images\image4.jpeg" alt="Image 4">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vinjamuru Harshitha</p>
+    </footer>
+</body>
+</html>
